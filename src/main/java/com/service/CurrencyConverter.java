@@ -63,7 +63,7 @@ public class CurrencyConverter extends HttpServlet {
             out.println("<p class=\"error\">The USD value must be a valid number!</p>");
         }
 
-        out.println("<br><a href=\"converter.html\" class=\"btn-back\">Back to Converter</a>");
+        out.println("<br><a href=\"convert.html\" class=\"btn-back\">Back to Converter</a>");
         out.println("</div>");
         out.println("</body>");
         out.println("</html>");
