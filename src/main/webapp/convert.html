@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>USD to KHR Converter Tool</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        background-color: #ffffff;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    h2 {
+        color: #2c3e50;
+        margin-top: 0;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 24px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 600;
+        color: #34495e;
+    }
+    input[type="text"] {
+        width: 100%;
+        padding: 12px;
+        box-sizing: border-box;
+        border: 2px solid #e0e0e0;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: border-color 0.3s;
+    }
+    input[type="text"]:focus {
+        border-color: #4a90e2;
+        outline: none;
+    }
+    .btn-blue {
+        width: 100%;
+        background-color: #4a90e2;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+    .btn-blue:hover {
+        background-color: #357abd;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Currency Converter</h2>
+<form action="convert" method="GET">
+<div class="form-group">
+<label for="usd">Amount in US Dollar (USD):</label>
+<input type="text" id="usd" name="usd" placeholder="e.g., 10.50" required>
+</div>
+<input type="submit" class="btn-blue" value="Convert Currency">
+</form>
+</div>
+</body>
+</html>
